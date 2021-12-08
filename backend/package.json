@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "nodemon -r esm -r dotenv/config ./src/server.js",
+    "test": "jest",
+    "migrate": "node -r dotenv/config ./node_modules/knex/bin/cli.js migrate:latest --env development --knexfile src/db/knexfile.js",
+    "seed": "node -r dotenv/config ./node_modules/knex/bin/cli.js seed:run --env development --knexfile src/db/knexfile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dateformat": "^4.6.3",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "knex": "^0.95.10",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1",
+    "pg-mem": "^1.9.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2"
+  }
+}

@@ -1,0 +1,37 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  width: 168px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.sidebar {
+  background-color: rgb(252, 252, 252);
+}
+.site-layout-background.content {
+  border-top: rgb(247, 247, 247) solid 2px;
+  border-left: rgb(247, 247, 247) solid 2px;
+  color: rgb(244, 244, 255);
+}
+
+.ant-layout-sider-light .ant-layout-sider-trigger {
+  color: rgba(0, 0, 0, 0.85);
+  background: rgb(235, 236, 236);
+}
+.header-items {
+  float: right;
+}
+.ant-dropdown-link {
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+[data-theme='dark'] .site-layout .site-layout-background {
+  background: #141414;
+}
